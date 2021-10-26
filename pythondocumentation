@@ -1,0 +1,159 @@
+To use lines in python - 
+
+## shebangs 
+
+#!/usr/bin/env pyhton3.9 
+
+============
+strings:
+    - " "
+strings and methods >> 'single'.find('')
+
+call methods to find something. 
+
+string comparison. str.lower() or str.upper()
+
+In [3]: print("slash\nCharacter") << create new line of the code. 
+slash
+Character
+
+In [4]: print('\'double\' quotes') << create double quotes 
+'double' quotes
+
+
+In [5]: print(' "double" quotes')
+ "double" quotes
+
+ modular operations show whether something is even or not. 
+
+ In [10]: 4 % 2
+Out[10]: 0
+
+In [11]: 5 % 2
+Out[11]: 1
+
+
+Exponents -
+
+In [12]: 2 ** 3
+Out[12]: 8
+
+In [13]: pow(2, 3) <<< this is very important >>>
+Out[13]: 8
+
+<<<< floats and such type >>>>
+In [14]: 1.1 + 3
+Out[14]: 4.1
+
+In [15]: 4.0 + 3
+Out[15]: 7.0
+
+
+<<<< float, strings , ints>>>>
+
+In [16]: type(4.0)
+Out[16]: float
+
+In [18]: type("thing")
+Out[18]: str
+
+
+<<<<<bools and none >>>>>
+
+In [22]: bool(1.0)
+Out[22]: True
+
+In [23]: bool(0)
+Out[23]: False
+
+items can be converted to true or false using the bool function. 
+
+<<<<<< variables>>>>>>
+
+this is a a named value. 
+
+In [25]: my_name= "duncan"
+
+In [26]: my_name
+Out[26]: 'duncan' 
+
+In [32]: my_name = my_name + last_name
+
+In [33]: my_name
+Out[33]: 'duncan njoroge njoroge' 
+
+
+<<<<<<< list , tuple, range >>>>>>> - sequence types
+
+In [36]: my_list = [1, 2, 3, 4, 5]
+
+In [37]: my_list
+Out[37]: [1, 2, 3, 4, 5]
+
+In [38]: my_list[0]
+Out[38]: 1
+
+In [44]: len(my_list) ---- the length of the list. 
+Out[44]: 5
+
+In [45]: my_list[0::2] -- slicing. 
+Out[45]: [1, 3, 5]
+
+
+In [47]: my_list[::-1]
+Out[47]: [5, 4, 3, 2, 1]
+ >> to reverse a list in python. Add ::-1
+
+ >> add another value to python. 
+
+In [48]: my_list[0] = "a" 
+
+In [49]: my_list
+Out[49]: ['a', 2, 3, 4, 5]
+
+
+In [50]: my_list[0:2] = [1, 2, 3] >> adds something from a list. 
+
+In [51]: my_list
+Out[51]: [1, 2, 3, 3, 4, 5]
+
+In [52]: my_list[0:2] = [] >> tremove something from a list, this removes something from a list, the values from 0 - 2 
+
+In [53]: my_list
+Out[53]: [3, 3, 4, 5]
+
+
+In [55]: my_list.remove(4) >> remove method removes a value from the list
+
+In [56]: my_list
+Out[56]: [3, 3, 5]
+
+
+In [57]: my_list.pop()
+Out[57]: 5
+
+In [58]: my_list.pop()
+Out[58]: 3
+
+In [59]: my_list.pop()
+Out[59]: 3
+
+In [60]: my_list.pop()
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+<ipython-input-60-2c0a8eafa4ba> in <module>()
+----> 1 my_list.pop()
+
+IndexError: pop from empty list
+
+>> pop removes the last value from the list. 
+
+my_list.pop(0) >> this removes everything 
+
+
+insert method does this : my_list.insert(index, item)
+
+In [62]: my_list.insert(1, 0) >> index 1, insert 0
+
+In [63]: my_list
+Out[63]: [1, 0, 2, 3, 4, 5] 
