@@ -83,7 +83,7 @@ In [33]: my_name
 Out[33]: 'duncan njoroge njoroge' 
 
 
-<<<<<<< list , tuple, range >>>>>>> - sequence types
+<<<<<<<list , tuple, range>>>>>>> - sequence types
 
 In [36]: my_list = [1, 2, 3, 4, 5]
 
@@ -160,7 +160,7 @@ Out[63]: [1, 0, 2, 3, 4, 5]
 
 
 
-<<<<<<tuples and ranges >>>>>>
+<<<<<<tuples and ranges>>>>>>
 
 tuple is a fixed width immutable sequence type. 
 
@@ -201,7 +201,133 @@ Out[10]: 4.0
 In [11]:
 
 
-<<<<<<<< ranges >>>>>>>>
+<<<<<<<<ranges>>>>>>>>
 
 In [11]: range(10)
 Out[11]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+<<<<<< dictionaries >>>>>>
+Key value pairing 
+
+In [14]: ages = { 'Kevin': 29, 'alex':29, 'bob':40 }
+
+In [15]: ages
+Out[15]: {'Kevin': 29, 'alex': 29, 'bob': 40}
+
+Add item 
+
+In [18]: ages ['Keith'] = 29
+
+In [19]: ages
+Out[19]: {'Keith': 29, 'Kevin': 29, 'alex': 29, 'bob': 40}
+
+remove item from dicitonary 
+
+In [20]: del ages['Kevin']
+
+In [21]: ages
+Out[21]: {'Keith': 29, 'alex': 29, 'bob': 40}
+
+In [25]: ages.keys()
+Out[25]: ['Keith', 'bob', 'alex']
+
+In [26]: ages.values()
+Out[26]: [29, 40, 29]
+
+In [27]: weights = dict(kevin=160, bob=250) >> different way of adding values to a dictionary
+by passing a variable. 
+
+In [28]: weights
+Out[28]: {'bob': 250, 'kevin': 160}
+
+
+<<<<<<<<comparisons>>>>>>>>
+
+Take two values and return a boolean to it. 
+
+<
+>
+!=
+==
+<=
+=>
+
+in - this can be able to compare conditionals to boolean 
+
+In [29]: 1 in [1, 2, 3]
+Out[29]: True
+
+In [30]: 4 in [1, 2, 3]
+Out[30]: False
+
+In [31]: 4 in [1, 2, 3]
+Out[31]: False
+
+In [32]: 5 not in [1, 2, 3]
+Out[32]: True
+
+In [33]: 3 not in [1, 2, 3]
+
+
+if 
+>>
+
+In [39]: if  1 > 2:
+    ...:     print("was true")
+    ...:
+
+In [40]: if  1 <= 2:
+    ...:     print("was true")
+    ...:
+was true
+
+
+else
+>>
+In [43]: if  1 > 2:
+    ...:     print("was true")
+    ...: else:
+    ...:     print("was false")
+    ...:
+was false
+
+elif
+
+In [52]: if len(name) >= 6:
+    ...:     print ("name is long")
+    ...: elif len(name) == 5:
+    ...:     print ("name is 5 characters")
+    ...: elif len(name) >=4:
+    ...:     print("name is 4 or more")
+    ...: else:
+    ...:     print("name is short")
+    ...:
+name is 5 characters 
+
+
+<<<<<<logic-operators>>>>>>
+not will do the opposite is not true is false
+
+In [54]: not 1 > 2
+Out[54]: True
+
+
+In [57]: '' or 'keith'
+Out[57]: 'keith'
+
+In [58]: '' or '0'
+Out[58]: '0' >> looks for the truthy value.
+
+In [60]: first = "Keith"
+
+In [61]: last = ""
+
+In [62]: if first and last:
+    ...:     print("the user has a full name")
+    ...:
+
+In [63]: if first or last:
+    ...:     print("the user has a full name")
+    ...:
+the user has a full name
