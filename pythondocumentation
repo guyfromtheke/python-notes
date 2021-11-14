@@ -304,8 +304,6 @@ In [52]: if len(name) >= 6:
     ...:     print("name is short")
     ...:
 name is 5 characters 
-
-
 <<<<<<logic-operators>>>>>>
 not will do the opposite is not true is false
 
@@ -331,3 +329,94 @@ In [63]: if first or last:
     ...:     print("the user has a full name")
     ...:
 the user has a full name
+
+
+-------------<for-loop>----------------------
+
+
+>>> ages ={'kevin': 59, 'bob':40, 'kayla':21}
+>>> for key in ages:
+...     print (f"{key} is {ages[key]}")
+...
+kevin is 59
+bob is 40
+kayla is 21
+
+>>> for letter in "my-string":
+...     print(letter)
+...
+m
+y
+-
+s
+t
+r
+i
+n
+g
+>>>
+
+#you can itemize them in tuples.
+
+>>> list_of_points = [(1,2), (3,4), (5,6)]
+>>> for x, y in list_of_points:
+...     print(f"X: {x}, y:{y}")
+...
+X: 1, y:2
+X: 3, y:4
+X: 5, y:6
+
+----------<functions>----------------
+
+>>> def hello_world():
+...     print("hello world")
+...
+>>> hello_world
+<function hello_world at 0x7f58be52e1f0>
+>>> hello_world()
+hello world
+
+#define a function 
+
+>>> def print_name(name):
+...     print (f"Name is {name}")
+...
+>>> print_name("Kienj")
+Name is Kienj
+>>>
+>>> def add_two(num):
+...     return num + 2
+
+# this function helps in returning a value to the function in 
+# that if you do the next steps, you will be able to see what you're adding. Its the most common use case. 
+
+
+
+...
+>>> result = add_two(2) 
+>>>
+>>> result
+4
+>>> result = add_two(4)
+>>> result
+6
+>>>
+>>> def add(num1, num2):
+...     return num1 + num2
+...
+>>> add(1,5)
+6
+>>> def contact_card(name, age, car_model):
+...     return f"{name} is {age} and drives a {car_model}"
+...
+>>> contact_card("keith", 28, "civic")
+'keith is 28 and drives a civic'
+>>> contact_card(age=28, car_model="civic", name="keith")
+'keith is 28 and drives a civic'
+>>>
+>>>
+>>> def can_drive(age, driving_age=16):
+...     return age >= driving_age
+...
+>>> can_drive(15)
+False
