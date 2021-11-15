@@ -420,3 +420,25 @@ Name is Kienj
 ...
 >>> can_drive(15)
 False
+
+
+------------<composition>----------
+
+take a look at creating_classes.py and tire.py
+
+they are creating types with building more complex types. 
+
+
+-------------<inheritance>--------------
+
+
+creating a class based of a different class. 
+
+base class is the supertype. 
+
+reuse work from one class to another class. 
+
+
+Esp in python 3.9 and above
+
+------------<polymorphism>--------------
