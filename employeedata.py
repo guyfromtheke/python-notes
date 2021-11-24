@@ -9,6 +9,8 @@ class Employee:
         self.last = last
         self.pay  = pay
         self.email = first + '.' + last + '@company.com'
+#Class variable are shared along all objects of the class. 
+#Instance variables are declared inside the constructor method of a class. 
 
 
         Employee.num_of_emps += 1
@@ -21,11 +23,15 @@ class Employee:
 # this raise is hidden in this method. 
 # But it can also be instanciated at the top. from the class. 
 
+print(Employee.num_of_emps)
 
 emp_1= Employee('duncan', 'njoroge', 50000)
 emp_2= Employee('hellen', 'njoroge', 60000)
 
-print(emp_1.__dict__)
+print(Employee.num_of_emps)
+
+print(emp_1.__dict__) # the values in the dictionary. 
+print(emp_2.__dict__)
 
 emp_1.raise_amount = 1.05
 

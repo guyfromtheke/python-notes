@@ -442,3 +442,35 @@ reuse work from one class to another class.
 Esp in python 3.9 and above
 
 ------------<polymorphism>--------------
+
+
+
+
+
+-------------<packages&libraries>----------------
+
+python module index
+
+>>> import math
+>>> math.pi
+3.141592653589793
+
+import module and access the classes within the module. 
+
+
+>>> from math import pi, ceil
+>>> pi
+3.141592653589793
+>>> ceil
+<built-in function ceil>
+>>>
+
+this is the way to do it ^^^^^^ <-
+
+
+>>> from math import * <<imports everything in the module. Import only the things that you will be using. >>
+
+
+
+
+
