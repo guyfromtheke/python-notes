@@ -471,6 +471,24 @@ this is the way to do it ^^^^^^ <-
 >>> from math import * <<imports everything in the module. Import only the things that you will be using. >>
 
 
+It won't expose things that are private. 
+
+pdb <<< import pdb>>>
 
 
+------------<using 3rd party modules>---------------
 
+installing 3rd party modules. 
+
+ ------------<using with files>--------------------------
+
+
+ 'r' - open for reading
+ 'w' - open for writing
+ 'x' - poen for exclusive creation, failing if the file already exists
+ 'a' - open for writing, appengind to the end of the file if it exists
+ 'b' - binary mode
+ 't' - text mode
+ '+' - open a disk file for updating. 
+
+ 
