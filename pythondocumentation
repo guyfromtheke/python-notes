@@ -485,10 +485,91 @@ installing 3rd party modules.
 
  'r' - open for reading
  'w' - open for writing
- 'x' - poen for exclusive creation, failing if the file already exists
- 'a' - open for writing, appengind to the end of the file if it exists
- 'b' - binary mode
+ 'x' - ooen for exclusive creation, failing if the file already exists
+ 'a' - open for writing, appending to the end of the file if it exists
+ 'b' - binary mode, convert file into bytes. 
  't' - text mode
  '+' - open a disk file for updating. 
 
- 
+
+ check using_files.py file. 
+
+
+ ----------------<environment variables>--------------
+
+ using os module. 
+
+----------------<error handling>---------------------
+
+try & except statements
+
+
+check handle_errors.py for code.
+
+in the code 
+
+my_file = open('recipes.txt' , 'x') <<< x will exit with error file already exists >>>
+
+guyfromtheke@guyfromtheke:/mnt/d/vscode/Python/documentation$ python handle_errors.py 
+Traceback (most recent call last):
+  File "/mnt/d/vscode/Python/documentation/handle_errors.py", line 1, in <module>
+    my_file = open('recipes.txt' , 'x')
+>>>>>  FileExistsError: [Errno 17] File exists: 'recipes.txt'
+
+
+--------------<python decorators>---------------
+
+def f(......):
+f = staticmethod(f)
+
+@staticmethod
+def f (.......):
+    .....
+
+    functions that take in fucntions as arguments. 
+
+    check decorators.py file 
+
+classic 
+
+static
+
+property decorators.
+
+------------<debugging with pdb>----------------
+
+pdb - python debugger
+
+
+check debugging.py
+
+import pdb
+
+breakpoint debugging
+
+breakpoint function calls pdb 
+
+
+guyfromtheke@guyfromtheke:/mnt/d/vscode/Python/documentation$ python -m pdb debugging.py  >>> calls pdb 
+> /mnt/d/vscode/Python/documentation/debugging.py(4)<module>()
+-> def map(func, values):
+(Pdb) ll
+  1     #import pdb
+  2  
+  3  
+  4  -> def map(func, values):
+  5         output_values = []
+  6         index = 0
+  7         while index < len(values):
+  8            # pdb.set_trace()  #set it in the middle of the code.
+  9             output_values.append(func(values[index]))
+ 10             index +=1
+ 11         return output_values
+ 12  
+ 13     def add_one(val):
+ 14         return val + 1
+ 15     print(map(add_one, list(range(10))))
+(Pdb) 
+
+
+
